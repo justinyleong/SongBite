@@ -4,7 +4,7 @@ import pandas as pd
 from scipy.signal import find_peaks
 
 def find_song_peaks(id, title):
-    milk_data = pd.read_csv('./' + title + '.csv')
+    milk_data = pd.read_csv("./audio_files/" + title + '.csv')
     time_series = milk_data['heat_score']
 
     indices = find_peaks(time_series, distance=15, prominence=0.1)[0]

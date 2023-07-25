@@ -10,8 +10,8 @@ def download(id):
     stream.download(filename='tempfile.mp4')
 
     print("⏬ Downloading: " + yt.title)
-    if not os.path.exists(yt.title + "_audio.mp4"):
-        os.rename("tempfile.mp4", yt.title + "_audio.mp4")
+    if not os.path.exists("./audio_files/" + id + "_audio.mp4"):
+        os.rename("tempfile.mp4", "./audio_files/" + id + "_audio.mp4")
         
     print("✅ Successfully downloaded")
     return yt.title

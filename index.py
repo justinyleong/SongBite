@@ -47,7 +47,7 @@ def main():
         
         temp += 1
 
-        media = vlc.Media(title + "_audio.mp4")
+        media = vlc.Media("./audio_files/" + id + "_audio.mp4")
         print("🍕 Playing the tasty part: " + title)
         print("\n😋 😋 😋\n")
         # print(str(peaks[0]/1000))
