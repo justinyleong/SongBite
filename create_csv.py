@@ -23,6 +23,6 @@ def create_csv(id, title):
     }
 
     df = pd.DataFrame(song_dict)
-    df.to_csv("./audio_files/" + title + ".csv", index=False)
+    df.to_csv("./audio_files/" + id + ".csv", index=False)
     print("🪣  CSV created")
 

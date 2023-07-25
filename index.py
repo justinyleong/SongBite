@@ -52,7 +52,7 @@ def main():
         print("\n😋 😋 😋\n")
         # print(str(peaks[0]/1000))
         media.add_option('start-time=' + str(peaks[0]/1000))
-        media.add_option('stop-time=' + str(peaks[0]/1000 + 10))
+        media.add_option('stop-time=' + str(peaks[0]/1000 + 20))
         media_player.set_media(media)
         media_player.play()
     
