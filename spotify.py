@@ -2,9 +2,7 @@ import requests
 import base64
 # from secrets import *
 import json
-
-clientId = "11d5b22840294e74a37fb7a3e1cdca49"
-clientSecret = "8e46a6fae0e448239bf2fb510f341dae"
+from secrets import *
 
 def getSongNames(playlistId):
   url = 'https://accounts.spotify.com/api/token'

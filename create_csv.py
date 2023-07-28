@@ -7,8 +7,13 @@ def create_csv(id, title):
 
     res = requests.get(url + id)
 
-    heat_markers = res.json()["items"][0]["mostReplayed"]["heatMarkers"]
-
+    heat_markers = res.json()["items"][0]["mostReplayed"]
+    
+    if heat_markers == None:
+        return
+    else:
+        heat_markers = heat_markers["heatMarkers"]
+    
     timeRangeStartMillis = []
     heatMarkerIntensityScoreNormalized = []
 
